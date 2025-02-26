@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Технологічна група</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Проєкти технологічних груп</h1>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <nav>
+            <ul>
+                <li><button onclick="location.href='index.html'">Головна</button></li>
+                <li><button onclick="location.href='games.html'">Ігри</button></li>
+                <li><button onclick="location.href='websites.html'">Сайти</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="project-grid">
+            <article class="project-card"
+                data-extra="<p>This is a detailed description of <strong>Project One</strong>. It covers objectives, technologies used, challenges, and outcomes.</p>">
+                <img src="https://via.placeholder.com/320x220" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>Brief description of project one.</p>
+                </div>
+            </article>
+
+            <article class="project-card"
+                data-extra="<p>This is a detailed description of <strong>Project Two</strong>. It highlights features, design considerations, and performance metrics.</p>">
+                <img src="https://via.placeholder.com/320x220" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>Brief description of project two.</p>
+                </div>
+            </article>
+
+            <article class="project-card"
+                data-extra="<p>This is a detailed description of <strong>Project Three</strong>. It explains innovative solutions, the technology stack, and the impact of the project.</p>">
+                <img src="https://via.placeholder.com/320x220" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>Brief description of project three.</p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <!-- Modal for extra project info -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Extra project info will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
