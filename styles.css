@@ -420,6 +420,7 @@ footer p {
   }
 
   .menu-icon {
+    position: fixed;
       display: block;
   }
 
