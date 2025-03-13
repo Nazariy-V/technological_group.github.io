@@ -109,6 +109,7 @@ nav ul li button.active {
 .project-card {
     background: var(--card-bg);
     border-radius: 12px;
+    border-color: var(--shadow-color);
     overflow: hidden;
     box-shadow: 0 6px 12px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -350,7 +351,8 @@ nav ul li button.active {
   }
   
   .cta button {
-    background: var(--accent);
+    border: 2px solid var(--accent);
+    background: var(--bg-color);
     color: #fff;
     border: none;
     padding: 1rem 2rem;
