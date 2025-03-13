@@ -8,11 +8,17 @@ const menu = document.getElementById('menu');
 
 projectCards.forEach(card => {
     card.addEventListener('click', () => {
-        const extraInfo = card.getAttribute('data-extra');
-        modalBody.innerHTML = `<h2>${card.querySelector('h3').innerText}</h2>${extraInfo}`;
+        const extraInfo = card.getAttribute('data-extra') || '';
+        const title = card.querySelector('h3') ? card.querySelector('h3').innerText : 'No Title';
+        const projectImage = card.querySelector('img');
+
+        const imageHTML = projectImage ? `<img src="${projectImage.src}" alt="Project Image" >` : '';
+
+        modalBody.innerHTML = `<h2>${title}</h2>${imageHTML}<p>${extraInfo}</p>`;
         modal.classList.add('active');
     });
 });
+
 
 
 modalClose.addEventListener('click', () => {
